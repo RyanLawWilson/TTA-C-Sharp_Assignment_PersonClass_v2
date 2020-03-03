@@ -7,11 +7,18 @@ namespace PersonClass_v2
         static void Main(string[] args)
         {
             Console.WriteLine("This employee is going to say their name!!");
-            System.Threading.Thread.Sleep(1000);
-            Employee emp = new Employee() { firstName = "Sample", lastName = "Student" };
-            emp.SayName();
+            System.Threading.Thread.Sleep(1500);
+            Person emp1 = new Employee() { firstName = "Sample", lastName = "Student" };
+            emp1.SayName();
 
-            Console.WriteLine("\nWOW!  That's a weird name!");
+            System.Threading.Thread.Sleep(1500);
+            Console.WriteLine();
+
+            Console.WriteLine("This is another employee.  What do they have to say?");
+            System.Threading.Thread.Sleep(1500);
+            IQuittable emp2 = new Employee() { firstName = "Sample", lastName = "Student" };
+            emp2.Quit();
+
             Console.Read();
         }
     }
