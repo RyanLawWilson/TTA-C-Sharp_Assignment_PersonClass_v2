@@ -12,10 +12,6 @@ namespace PersonClass_v2
         public string firstName { get; set; }
         public string lastName { get; set; }
 
-        public void SayName()
-        {
-            Console.WriteLine("Name: {0} {1}", firstName, lastName);
-        }
-
+        public abstract void SayName();
     }
 }

@@ -12,5 +12,10 @@ namespace PersonClass_v2
             System.Threading.Thread.Sleep(1500);
             System.Environment.Exit(0);
         }
+
+        public override void SayName()
+        {
+            Console.WriteLine("Name: {0} {1}", firstName, lastName);
+        }
     }
 }

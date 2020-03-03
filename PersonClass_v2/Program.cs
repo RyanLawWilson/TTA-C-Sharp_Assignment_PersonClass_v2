@@ -8,7 +8,7 @@ namespace PersonClass_v2
         {
             Console.WriteLine("This employee is going to say their name!!");
             System.Threading.Thread.Sleep(1500);
-            Person emp1 = new Employee() { firstName = "Sample", lastName = "Student" };
+            Employee emp1 = new Employee() { firstName = "Sample", lastName = "Student" };
             emp1.SayName();
 
             System.Threading.Thread.Sleep(1500);
